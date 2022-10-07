@@ -5,8 +5,8 @@ package com.openclassroom;
 */
 
 
-public class Exo {
-	/*Le code commence ici*/
+/**public class Exo {
+	/*Le code commence ici
 	
 	private String name;
 	private int age;
@@ -39,6 +39,21 @@ public class Exo {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
+
 	
+}*/
+
+public class Exo{
 	
+	public static void main (String[] args) {
+		bonjour("Thomas");
+		bonjour("Thomas");
+		
+		for(int i = 0; i <= 100; i++);{
+		bonjour(Integer.toString(i));
+		}
+	}	
+	static void bonjour(String nom) {
+		System.out.println("Bonjour" + nom + "!!");
+	}
 }
