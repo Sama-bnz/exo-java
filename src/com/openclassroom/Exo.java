@@ -72,7 +72,7 @@ public class Exo{
 		return(int) ((Math.random() * ((100 - 1) +1))+1);
 	}*/
 	
-	public static void main (String[] args) {
+	/**public static void main (String[] args) {
 		if(getBoolean()){
 			console("vrai");	
 		}else {
@@ -85,5 +85,33 @@ public class Exo{
 	}
 	static boolean getBoolean() {
 		return true;
+	}*/
+	
+	public static void main (String[] args) {
+		/**int nombre = 12;
+		if(nombre ==1) {
+			console("if 1");
+		}else if(nombre ==2) {
+			console("if 2");
+		}else {
+			console("rien ne correspond l'ami");
+		}
+		
+		switch(nombre) {
+			case 1:
+				console("switch 1");
+				break;
+			default:
+				console("default");
+		}
+	}
+	static void console(String text){
+		System.out.println(text);
+	}*/
+	int loopLimit = 101;
+	int iterations = 0;
+	for (int i=5;i< loopLimit;i++) {
+	    iterations += 1;
+		}
 	}
 }
