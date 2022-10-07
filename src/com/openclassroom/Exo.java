@@ -57,7 +57,7 @@ public class Exo{
 		System.out.println("Bonjour" + nom + "Comment allez vous aujourd'hui?");
 	}*/
 	
-	public static void main (String[] args) {
+	/**public static void main (String[] args) {
 		int i = 0;
 		while(i <=50) {
 			i = randomNumber();
@@ -70,5 +70,20 @@ public class Exo{
 	}
 	static int randomNumber() {
 		return(int) ((Math.random() * ((100 - 1) +1))+1);
+	}*/
+	
+	public static void main (String[] args) {
+		if(getBoolean()){
+			console("vrai");	
+		}else {
+			console("faux");
+		}
+	}
+	
+	static void console(String text){
+		System.out.println("Il es préférable d'etre dans le " + text + " si on veux avancer dans la vie, le contraire serait catastrophique!");
+	}
+	static boolean getBoolean() {
+		return true;
 	}
 }
