@@ -54,6 +54,6 @@ public class Exo{
 		}
 	}	
 	static void bonjour(String nom) {
-		System.out.println("Bonjour" + nom + "!!");
+		System.out.println("Bonjour" + nom + "comment allez vous aujourd'hui?");
 	}
 }
