@@ -45,7 +45,7 @@ package com.openclassroom;
 
 public class Exo{
 	
-	public static void main (String[] args) {
+	/**public static void main (String[] args) {
 		bonjour("Thomas");
 		bonjour("Thomas");
 		
@@ -54,6 +54,21 @@ public class Exo{
 		}
 	}	
 	static void bonjour(String nom) {
-		System.out.println("Bonjour" + nom + "comment allez vous aujourd'hui?");
+		System.out.println("Bonjour" + nom + "Comment allez vous aujourd'hui?");
+	}*/
+	
+	public static void main (String[] args) {
+		int i = 0;
+		while(i <=90) {
+			i = randomNumber();
+			print(i);
+		}
+	}
+	static void print(int nombre) {
+		System.out.println("Nombre:" + Integer.toString(nombre));
+		
+	}
+	static int randomNumber() {
+		return(int) ((Math.random() * ((100 - 1) +1))+1);
 	}
 }
