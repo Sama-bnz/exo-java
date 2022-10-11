@@ -87,8 +87,8 @@ public class Exo{
 		return true;
 	}*/
 	
-	public static void main (String[] args) {
-		/**int nombre = 12;
+	/**public static void main (String[] args) {
+		int nombre = 12;
 		if(nombre ==1) {
 			console("if 1");
 		}else if(nombre ==2) {
@@ -108,10 +108,37 @@ public class Exo{
 	static void console(String text){
 		System.out.println(text);
 	}*/
-	int loopLimit = 101;
-	int iterations = 0;
-	for (int i=5;i< loopLimit;i++) {
-	    iterations += 1;
+	/**public static void main (String[] args) {
+		String[] names = {"Igor","Jean","Brice"};
+		
+		if(names[0]== names[1]) {
+			System.out.println("C'est le meme prénom");
+		}else {
+			System.out.println("C'est n'es pas le meme prénom");
 		}
+		int[] numbers = {12,7,19};
+		System.out.println(numbers.length);
+		int calcul = (numbers[0] + numbers[1] + numbers[2] )/ numbers.length;
+		System.out.println(calcul);
+	}*/
+	public static void main (String[] args) {
+		/**int[][] numbers = {
+				{
+					5,7,8
+				},
+				{
+					3,2,1
+				},
+				{
+					9,4,2
+				}
+		};
+		
+		System.out.println(numbers[2][1] + "<--");
+	}*/
+		String pseudoss = "Sheishounet, Wakz, Faker, PoissonFécond";
+		String[] pseudos = pseudoss.split(",");
+		System.out.println(pseudos.length);
+		System.out.println(pseudos[0]);
 	}
 }
