@@ -135,10 +135,28 @@ public class Exo{
 		};
 		
 		System.out.println(numbers[2][1] + "<--");
-	}*/
+	}
 		String pseudoss = "Sheishounet, Wakz, Faker, PoissonFécond";
 		String[] pseudos = pseudoss.split(",");
-		System.out.println(pseudos.length);
-		System.out.println(pseudos[0]);
+		int[] notes = {7, 20, 12, 2};
+		
+		int i = 0;
+		
+		while(i != 100 ) {
+			i++;
+			System.out.println("C'est la sauce " + i);
+		}
+		int calcul = 0;
+	
+		
+		for(int i = 0; i< 10; i++) {
+			System.out.println("Voila une boucle classique " + i);
+		}
+		for(int note : notes) {
+			calcul = calcul + note;
+	
+		}
+		System.out.println("la moyenne de cet élève est de " + calcul/ notes.length );*/
 	}
 }
+	
