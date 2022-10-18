@@ -121,8 +121,11 @@ public class Exo{
 		int calcul = (numbers[0] + numbers[1] + numbers[2] )/ numbers.length;
 		System.out.println(calcul);
 	}*/
-	public static void main (String[] args) {
-		/**int[][] numbers = {
+	/**
+	 * @param args
+	 */
+	/**public static void main (String[] args) {
+		int[][] numbers = {
 				{
 					5,7,8
 				},
@@ -154,9 +157,31 @@ public class Exo{
 		}
 		for(int note : notes) {
 			calcul = calcul + note;
-	
+		sendMessage("test");
+		sendMessage("test Okayyyyyy");
 		}
-		System.out.println("la moyenne de cet élève est de " + calcul/ notes.length );*/
+		
+		
+		private static void sendMessage(String message){
+			System.out.println("Ceci est un message, oui " + message);
+		}*/
+	
+	
+	public static void main (String[] args) {
+		
+		Player player1 = new Player("Sama", 30.0, 200.0);
+		System.out.println("nom du joueur : " + player1.getName());
+		System.out.println("point de vie: "+player1.getHealth());
+		
+
+		
+		
+		Player player2 = new Player("Vicla", 24.0, 100.0);
+		player2.setName("Foxone");
+		player2.damage(player1.getAttack());
+		System.out.println("nom du joueur : " + player2.getName());
+		
 	}
 }
+
 	
