@@ -169,7 +169,7 @@ public class Exo{
 	
 	public static void main (String[] args) {
 		
-		Player player1 = new Player("Sama", 30.0, 200.0);
+		/**Player player1 = new Player("Sama", 30.0, 200.0);
 		System.out.println("nom du joueur : " + player1.getName());
 		System.out.println("point de vie: "+player1.getHealth());
 		
@@ -179,8 +179,22 @@ public class Exo{
 		Player player2 = new Player("Vicla", 24.0, 100.0);
 		player2.setName("Foxone");
 		player2.damage(player1.getAttack());
-		System.out.println("nom du joueur : " + player2.getName());
+		System.out.println("nom du joueur : " + player2.getName());*/
 		
+		
+		Apple a = new Apple();
+		a.taste();
+		a.miam();
+		
+		PineApple pen = new PineApple();
+		pen.taste();
+		pen.miam();
+		
+		if(a instanceof PeelFruit){
+			PeelFruit fruit	= pen;
+			fruit.isPeeled();
+			
+		}
 	}
 }
 
