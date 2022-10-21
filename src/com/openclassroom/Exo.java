@@ -181,6 +181,21 @@ public class Exo{
 		player2.damage(player1.getAttack());
 		System.out.println("nom du joueur : " + player2.getName());*/
 		
+		/**Day moment = Day.MATIN;
+		System.out.println(moment.name());
+		
+		moment = Day.NUIT;
+		System.out.println("Nous sommes le " + moment.name().toLowerCase()+ " il est actuellement : " + moment.getHour() + "h, " + moment.getMessage());
+		
+		JE VAIS MAINTENANT FAIRE UNE BOUCLE POUR CHAQUE ACTION EN FONCTION DE LA JOURNEE*/
+		
+		for(Day moment : Day.values()) {
+			if(!moment.equals(Day.MIDI)) {
+				System.out.println("Nous sommes le " + moment.name().toLowerCase()+ " il est actuellement : " + moment.getHour() + "h, " + moment.getMessage());
+
+			}
+		}
+			
 		
 		Apple a = new Apple();
 		a.taste();
