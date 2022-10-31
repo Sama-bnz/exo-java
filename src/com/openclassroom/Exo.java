@@ -1,6 +1,9 @@
 package com.openclassroom;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /** Ceci est une implémentation du message traditionnel "Hello world!"
 * @author L'équipe Education d'OpenClassrooms
@@ -214,20 +217,39 @@ public class Exo{
 		}*/
 		
 		
-		ArrayList<String> list = new ArrayList<String>();/**La précision <String> sur le deuxieme arraylist n'est pas obligatoire!
-		/**list.add(25);*/
-		/**list.add(new Object());*/
+		/**ArrayList<String> list = new ArrayList<String>();/**La précision <String> sur le deuxieme arraylist n'est pas obligatoire!
+		list.add(25);
+		list.add(new Object());
 		list.add("Texte");
 		list.add("Graven");
 		list.add("Bonne journée");
 		
 		System.out.println(list);
 		
-		/**list.remove(0);*/
+		list.remove(0);
 		if(list.size() !=1) {
 			System.out.println("Le tableau n'est pas égal à 1");
 		}
-		System.out.println(list);
+		System.out.println(list);*/
+		
+		Map<String, Integer> ages = new HashMap<>();
+		ages.put("Sama", 26);
+		ages.put("Foxo", 18);
+		ages.put("Shappa", 59);
+
+		System.out.println(ages.toString());
+		
+		int moyenne = 0;
+
+		for(Entry<String, Integer> element : ages.entrySet()) {
+			
+			/**System.out.println("La clé est " + element.getKey() + ", son age est de  " + element.getValue() + " ans");*/
+			
+			moyenne += element.getValue();
+		}
+				
+		System.out.println(moyenne / ages.size());
+		
 		}
 }
 
