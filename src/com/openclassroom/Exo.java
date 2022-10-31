@@ -1,5 +1,7 @@
 package com.openclassroom;
 
+import java.util.ArrayList;
+
 /** Ceci est une implémentation du message traditionnel "Hello world!"
 * @author L'équipe Education d'OpenClassrooms
 */
@@ -189,7 +191,7 @@ public class Exo{
 		
 		JE VAIS MAINTENANT FAIRE UNE BOUCLE POUR CHAQUE ACTION EN FONCTION DE LA JOURNEE*/
 		
-		for(Day moment : Day.values()) {
+		/**for(Day moment : Day.values()) {
 			if(!moment.equals(Day.MIDI)) {
 				System.out.println("Nous sommes le " + moment.name().toLowerCase()+ " il est actuellement : " + moment.getHour() + "h, " + moment.getMessage());
 
@@ -209,8 +211,24 @@ public class Exo{
 			PeelFruit fruit	= pen;
 			fruit.isPeeled();
 			
+		}*/
+		
+		
+		ArrayList<String> list = new ArrayList<String>();
+		/**list.add(25);*/
+		/**list.add(new Object());*/
+		list.add("Texte");
+		list.add("Graven");
+		list.add("Bonne journée");
+		
+		System.out.println(list);
+		
+		/**list.remove(0);*/
+		if(list.size() !=1) {
+			System.out.println("Le tableau n'est pas égal à 1");
 		}
-	}
+		System.out.println(list);
+		}
 }
 
 	
