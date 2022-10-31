@@ -214,7 +214,7 @@ public class Exo{
 		}*/
 		
 		
-		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<String>();/**La précision <String> sur le deuxieme arraylist n'est pas obligatoire!
 		/**list.add(25);*/
 		/**list.add(new Object());*/
 		list.add("Texte");
