@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /** Ceci est une implémentation du message traditionnel "Hello world!"
 * @author L'équipe Education d'OpenClassrooms
@@ -250,6 +252,11 @@ public class Exo{
 				
 		System.out.println(moyenne / ages.size());
 		
+		Timer chrono = new Timer();
+		
+		chrono.schedule(new CustomTimer(), 1000, 1000);
+			
+			
 		}
 }
 
