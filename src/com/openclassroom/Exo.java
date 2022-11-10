@@ -234,7 +234,7 @@ public class Exo{
 		}
 		System.out.println(list);*/
 		
-		Map<String, Integer> ages = new HashMap<>();
+		/**Map<String, Integer> ages = new HashMap<>();
 		ages.put("Sama", 26);
 		ages.put("Foxo", 18);
 		ages.put("Shappa", 59);
@@ -245,19 +245,74 @@ public class Exo{
 
 		for(Entry<String, Integer> element : ages.entrySet()) {
 			
-			/**System.out.println("La clé est " + element.getKey() + ", son age est de  " + element.getValue() + " ans");*/
+			/**System.out.println("La clé est " + element.getKey() + ", son age est de  " + element.getValue() + " ans");
 			
 			moyenne += element.getValue();
 		}
-				
+		
+		
+		
+		
+		//CECI EST LE DEBUT D'APPRENTISSAGE DES CALLBACKS!!!		
+		 
+		
+		
+		
 		System.out.println(moyenne / ages.size());
 		
 		Timer chrono = new Timer();
 		
-		chrono.schedule(new CustomTimer(), 1000, 1000);
+		chrono.schedule(new CustomTimer(), 1000, 1000);*/
 			
+		
+		/**substract(10, 5, new CalculListener() {
 			
+			@Override
+			public void onPositifResult() {
+				System.out.println("C'est bien bravo");
+			}
+			
+			@Override
+			public void onNegativeResult() {
+				System.out.println("Pas bien bouuuh");
+			}
+		});
+		
 		}
+
+	private static void substract(int a, int b, CalculListener listener) {
+		int result = a-b;
+		System.out.println("le resultat de ce calcul est " + result);
+		
+		if(result > 0) {
+			System.out.println("le resultat est positif");
+			listener.onPositifResult();
+		}else {
+			System.out.println("Le resultat est négatif");
+			listener.onNegativeResult();
+		}*/
+		
+		 CustomTimer2 timer = new CustomTimer2();
+		 timer.start(new TimerListener() {
+			
+			@Override
+			public void onStart() {
+				System.out.println("Début du compte à rebours !");
+			}
+			
+			@Override
+			public void onRun() {
+				System.out.println("La progression est en marche ! ");
+			}
+			
+			@Override
+			public void onFinish() {
+				System.out.println("C'est la fin du temps imparti !");
+			}
+		});
+	}
+	
+	
 }
 
 	
